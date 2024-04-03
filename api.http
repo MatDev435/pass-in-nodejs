@@ -1,0 +1,34 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+    "title": "Novo evento 2",
+    "details": null,
+    "maximumAttendees": 1
+}
+
+###
+
+POST http://localhost:3333/events/90fb4e35-edb1-4635-9940-6ad6741dffd4/attendees
+Content-Type: application/json
+
+{
+    "name": "Matheus Salmazo",
+    "email": "matheus.salmazo@example.com"
+}
+
+###
+
+GET http://localhost:3333/events/08e6085d-e1a9-440f-a3cf-2bc06204900e
+
+###
+
+GET http://localhost:3333/attendees/9XA40/badge
+
+###
+
+GET http://localhost:3333/attendees/9XA40/check-in
+
+###
+
+GET http://localhost:3333/events/90fb4e35-edb1-4635-9940-6ad6741dffd4/attendees
